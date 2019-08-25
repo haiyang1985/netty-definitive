@@ -1,4 +1,4 @@
-package org.netty.definitive.bio;
+package org.netty.definitive.chapter2.bio;
 
 import java.io.BufferedReader;
 import java.io.IOException;

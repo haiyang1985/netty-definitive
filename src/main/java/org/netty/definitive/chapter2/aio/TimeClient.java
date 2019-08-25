@@ -1,4 +1,4 @@
-package org.netty.definitive.aio;
+package org.netty.definitive.chapter2.aio;
 
 public class TimeClient {
     public static void main(String[] args) {

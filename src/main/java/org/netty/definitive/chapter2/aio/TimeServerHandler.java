@@ -1,4 +1,4 @@
-package org.netty.definitive.aio;
+package org.netty.definitive.chapter2.aio;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

@@ -1,4 +1,4 @@
-package org.netty.definitive.netty;
+package org.netty.definitive.chapter3.netty;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -28,7 +28,6 @@ public class TimeServerNetty {
           .option(ChannelOption.SO_BACKLOG, 1024).childHandler(new ChildChannelHandler());
 
       ChannelFuture f = b.bind(port).sync();
-
       f.channel().closeFuture().sync();
     } finally {
       bossGroup.shutdownGracefully();
