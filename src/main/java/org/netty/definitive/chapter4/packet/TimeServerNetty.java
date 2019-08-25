@@ -27,7 +27,7 @@ public class TimeServerNetty {
         try {
             ServerBootstrap b = new ServerBootstrap();
             b.group(bossGroup, workerGroup).channel(NioServerSocketChannel.class)
-                    .option(ChannelOption.SO_BACKLOG, 2048).childHandler(new ChildChannelHandler());
+                    .option(ChannelOption.SO_BACKLOG, 1024).childHandler(new ChildChannelHandler());
 
             ChannelFuture f = b.bind(port).sync();
             f.channel().closeFuture().sync();
