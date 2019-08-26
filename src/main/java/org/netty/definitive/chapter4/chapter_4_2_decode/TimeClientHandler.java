@@ -15,6 +15,7 @@ public class TimeClientHandler extends ChannelHandlerAdapter {
 
     public TimeClientHandler() {
 //        req = "QUERY TIME ORDER".getBytes();
+        //System.getProperty("line.separator")=\n，LineBasedFrameworkDecoder就是根据\n解码的。
         req = ("QUERY TIME ORDER" + System.getProperty("line.separator")).getBytes();
 
     }
